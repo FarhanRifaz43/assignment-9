@@ -1,41 +1,41 @@
 [
     {
-        "id": 1,
+        "id": "1",
         "event_name": "Corporate Conference 2023",
         "image": "https://i.ibb.co/3rWRHG7/conference-3518465-1280.jpg",
         "event_description": "Join us for the annual Corporate Conference to gain insights from industry leaders.",
         "price": 199.99
     },
     {
-        "id": 2,
+        "id": "2",
         "event_name": "Product Launch Gala",
         "image": "https://i.ibb.co/N2ZYPPj/computer-2982270-1280.jpg",
         "event_description": "Be part of the grand product launch gala showcasing cutting-edge technology.",
         "price": 149.99
     },
     {
-        "id": 3,
+        "id": "3",
         "event_name": "Team Building Retreat",
         "image": "https://i.ibb.co/NLkPxpt/student-849822-1280.jpg",
         "event_description": "Boost team morale and productivity with our team-building retreat in a scenic location.",
         "price": 299.99
     },
     {
-        "id": 4,
+        "id": "4",
         "event_name": "Business Expo 2023",
         "image": "https://i.ibb.co/z4VfqTs/technology-791029-1280.jpg",
         "event_description": "Exhibit your products and services at the biggest business expo of the year.",
         "price": 249.99
     },
     {
-        "id": 5,
-        "event_name": "Executive Summit",
+        "id": "5",
+        "event_name": "Executive Leader Summit",
         "image": "https://i.ibb.co/9qBM50s/wordpress-923188-1280.jpg",
         "event_description": "Join top executives for a leadership summit focusing on innovation and growth strategies.",
         "price": 179.99
     },
     {
-        "id": 6,
+        "id": "6",
         "event_name": "Corporate Charity Gala",
         "image": "https://i.ibb.co/3rWRHG7/conference-3518465-1280.jpg",
         "event_description": "Support a noble cause while enjoying an elegant corporate charity gala.",
