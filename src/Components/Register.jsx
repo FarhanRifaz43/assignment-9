@@ -1,4 +1,5 @@
 import { useContext, useState } from "react";
+import { FcGoogle } from 'react-icons/fc'
 import { AuthContext } from "../firebase/AuthProvider";
 import { NavLink } from "react-router-dom";
 
@@ -6,7 +7,7 @@ const Register = () => {
     const [error, setError] = useState('');
     const [success, setSuccess] = useState('');
 
-    const {createUser} = useContext(AuthContext);
+    const {createUser, handleGoogleSignIn} = useContext(AuthContext);
 
     const handleRegister = e => {
         e.preventDefault();
@@ -69,6 +70,10 @@ const Register = () => {
                                     </div>
                                 </div>
                             </form>
+                            <div className="flex items-center gap-4 w-fit mx-auto mt-8">
+                                <h2 className="font-bold">Get Started With</h2>
+                                <button className="flex items-center gap-1 border border-cyan-500 px-2 py-2 rounded-md" onClick={handleGoogleSignIn}><FcGoogle></FcGoogle>Google</button>
+                            </div>
                         </div>
                     </div>
                 </div>

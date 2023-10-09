@@ -15,7 +15,7 @@ const ServiceDetail = () => {
                     <p className="py-6 text-center mx-10 text-gray-400">{detail.event_description}</p>
                 </div>
                 <div className="flex flex-row justify-between gap-10">
-                    <button className="btn btn-outline btn-info">Book Event for ${detail.price}</button>
+                    <Link to={'/payment'}><button className="btn btn-outline btn-info">Book Event for ${detail.price}</button></Link>
                     <Link to={'/'}><button className="btn btn-outline btn-error">Go back</button></Link>
                 </div>
             </div>

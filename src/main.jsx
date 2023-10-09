@@ -12,6 +12,8 @@ import Login from './Components/Login';
 import AuthProvider from './firebase/AuthProvider';
 import PrivateRoute from './Components/PrivateRoute';
 import Register from './Components/Register';
+import Profile from './Components/Profile';
+import Payment from './Components/Payment';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +36,14 @@ const router = createBrowserRouter([
       {
         path: '/register',
         element: <Register></Register>
+      },
+      {
+        path: '/profile',
+        element: <PrivateRoute><Profile></Profile></PrivateRoute>
+      },
+      {
+        path: '/payment',
+        element: <PrivateRoute><Payment></Payment></PrivateRoute>
       }
     ]
   },

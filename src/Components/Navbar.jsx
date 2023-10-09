@@ -11,8 +11,7 @@ const Navbar = () => {
         <NavLink to={'/'}><li className='font-bold hover:text-cyan-500 text-white hover:underline'>Home</li></NavLink>
         {
             user && <>
-                <li className='font-bold hover:text-cyan-500 text-white hover:underline'>Booked Services</li>
-                <li className='font-bold hover:text-cyan-500 text-white hover:underline'>Profile</li>
+                <NavLink to={'/profile'}><li className='font-bold hover:text-cyan-500 text-white hover:underline'>Profile</li></NavLink>
             </>
         }
         {!user && <NavLink to={'/login'}><li className='font-bold hover:text-cyan-500 text-white hover:underline'>Login</li></NavLink>}
@@ -26,7 +25,7 @@ const Navbar = () => {
                     <h2 className='text-cyan-500 lg:hidden'>{user.email}</h2>
                         <div className="avatar lg:hidden">
                             <div className="w-8 rounded-full ring ring-info ring-offset-base-100 ring-offset-2">
-                                <img src="https://i.ibb.co/xhN9Zy5/pexels-valeriia-miller-3361154.jpg" />
+                                <img src={user.photoURL} />
                             </div>
                         </div>
                     </div>}
@@ -62,7 +61,7 @@ const Navbar = () => {
                         <h2 className='text-cyan-500'>{user.email}</h2>
                         <div className="avatar">
                             <div className="w-8 rounded-full ring ring-info ring-offset-base-100 ring-offset-2">
-                                <img src="https://i.ibb.co/xhN9Zy5/pexels-valeriia-miller-3361154.jpg" />
+                                <img src={user.photoURL} />
                             </div>
                         </div>
                     </div>}
