@@ -1,7 +1,6 @@
 const Stats = () => {
     return (
-        <div className="flex gap-5 rounded-lg border mb-10 w-3/4 bg-slate-200 mx-auto">
-
+        <div className="flex flex-col md:flex-row gap-5 rounded-lg border mb-10 lg:w-3/4 w[100vw] bg-slate-200 md:mx-auto">
             <div className="stat">
                 <div className="stat-figure text-secondary">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-8 h-8 stroke-info"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>

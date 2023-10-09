@@ -8,6 +8,10 @@ import {
 import Root from './Components/Root';
 import Home from './Components/Home';
 import ServiceDetail from './Components/ServiceDetail';
+import Login from './Components/Login';
+import AuthProvider from './firebase/AuthProvider';
+import PrivateRoute from './Components/PrivateRoute';
+import Register from './Components/Register';
 
 const router = createBrowserRouter([
   {
@@ -20,8 +24,16 @@ const router = createBrowserRouter([
       },
       {
         path: '/services/:id',
-        element: <ServiceDetail></ServiceDetail>,
-        loader: () => fetch("data.json")
+        element: <PrivateRoute><ServiceDetail></ServiceDetail></PrivateRoute>,
+        loader: () => fetch("/data.json")
+      },
+      {
+        path: '/login',
+        element: <Login></Login>
+      },
+      {
+        path: '/register',
+        element: <Register></Register>
       }
     ]
   },
@@ -30,6 +42,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <AuthProvider>
     <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>,
 )
